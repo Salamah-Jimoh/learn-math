@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: lightblue;
+}
+.logo{
+    font-size:30px;
+    font-weight: 900;
+    color:orange;
+}
+span{
+    color:blue;
+    font-size:35px;
+}
+header{
+    background-image: url('image.jpeg');
+    padding:40px;
+}
+
+ul{
+ margin-left: 45%;   
+ margin-top:20px;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    margin:1.5em;
+}
+
+ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight: 900;
+    background-color: orange;
+    padding:10px;
+    border-radius:5px;
+}
+ul li:hover{
+    background-color: white;
+    padding:10px;
+border-radius:15px;
+}
+.current{
+  text-decoration: underline;
+  text-decoration-color:white ;
+  color:white;
+  background-color: blue;
+}
+.container{
+    display:flex;
+    margin:auto;
+}
+.equations{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 67px;
+color:white;  
+margin-top:80px;  
+flex:4;
+}
+.equations h1{
+    margin:10px;  
+}
+.num1{
+    color:red;
+    border-radius: 5px;
+    
+}
+.num2, .num4{
+    color:white;
+    border-radius: 5px;
+}
+.num3{
+    color:green;
+}
+.num5{
+    color:yellow;
+}
+.options{
+flex:1;
+font-size: 67px;
+color:white;  
+}
+.options h1{
+    background: grey;
+}
+#option1{
+background-color: yellow;
+text-align:center;
+transition:1s;
+cursor: pointer;
+}
+#option1:hover{
+    background-color: orange;  
+}
+#option2{
+text-align:center;
+transition:1s;
+cursor: pointer;
+}
+#option2:hover{
+    background-color: orange; 
+}
+#option3{
+    background-color: green;
+    text-align:center;
+    transition:1s;
+    cursor: pointer;
+    }
+    #option3:hover{
+        background-color: orange; 
+    }
+    @media(max-width:760px){
+        ul li{
+          display:block;
+        }
+        .container{
+            flex-wrap: wrap;
+        }
+        .equations{
+            font-size: 30px;
+        }
+        .options{
+            font-size: 40px;
+        }
+    }

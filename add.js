@@ -1,12 +1,13 @@
-/*var myNumber= 581;
-var length= myNumber.toString().split('').slice(0,2);
-console.log(length)*/
+console.log('BismilLah');
+/*let NumOne = document.getElementById('num1');
+let NumTwo = document.getElementById('num2');*/
 let optionOne = document.getElementById('option1');
 let optionTwo = document.getElementById('option2');
 let optionThree = document.getElementById('option3');
+ let answer=0;
 let audio = document.getElementById('beep');
 let audio1 = document.getElementById('clap');
-var answer =0;
+console.log(audio)
 optionOne.addEventListener('click', ()=>{
     if(optionOne.innerHTML==answer){
         audio1.play();
@@ -32,16 +33,12 @@ optionThree.addEventListener('click', ()=>{
 }
 });
  function generateEquation(){
-var num1=Math.floor(Math.random() *(10 -1)+1);
-var num2=Math.floor(Math.random() *(10 -1)+1);
-var dummyAnswer=Math.floor(Math.random() *(20 -1)+0)
-var dummyAnswerOne=Math.floor(Math.random() *(20 -1)+0)
-
-     /*dummyAnswerOne.toString().split('').slice(0,2);
-     answer.toString().split('').slice(0,2);*/
-     var allAnswers=[];
- answer=num1 / num2;
- answer =Math.round(answer *100) /100;
+var num1=Math.floor(Math.random() *20);
+var num2=Math.floor(Math.random() *20);
+var dummyAnswer=Math.floor(Math.random() *20);
+var dummyAnswerOne=Math.floor(Math.random() *20);
+var allAnswers=[];
+ answer=num1 + num2;
 document.getElementById('num1').innerHTML=num1;
 document.getElementById('num2').innerHTML=num2;
 allAnswers=[answer, dummyAnswer, dummyAnswerOne];

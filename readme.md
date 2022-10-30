@@ -5,7 +5,7 @@ This app will help children improve on their mathematics skill by giving them se
 ### Links
 
 
-- Live Site URL: [Add live site URL here](learn-mathh.netlify.app)
+- Live Site URL: [learn-mathh.netlify.app]
 ### Built with
 
 - Semantic HTML5 markup
